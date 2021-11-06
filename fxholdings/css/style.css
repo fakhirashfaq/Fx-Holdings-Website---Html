@@ -1,0 +1,58 @@
+body {
+  font-family: Helvetica;
+}
+.nav-link:hover {
+  background-color: white;
+}
+.extra-pad {
+  padding: 2rem 1rem;
+}
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-display: block;
+  src: url(../css/font/FontsFree-Net-HelveticaNeueBold.ttf) format("ttf");
+}
+.display-4 {
+  font-weight: 800;
+}
+.footer {
+  padding: 1rem 0 0 0;
+}
+
+@media (min-width: 576px) {
+  .jumbotron {
+    padding: 5.5rem 2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+  }
+}
+.display-4 {
+  font-size: 13.5rem;
+  line-height: 0.95;
+}
+.navbar-nav {
+  font-size: 12px;
+}
+/*.container-fluid{
+    padding-left: 10%;
+    padding-right: 10%;
+}*/
+.jumbotron {
+  height: 100vh;
+}
+.custom-banner-section {
+  /*
+    background: rgb(119, 26, 36);
+    background-position: center center;
+    background-size: cover; */
+  overflow: hidden;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 2px !important;
+  position: relative;
+}
+
+.custom-banner-image {
+  width: 100%;
+  height: auto;
+}

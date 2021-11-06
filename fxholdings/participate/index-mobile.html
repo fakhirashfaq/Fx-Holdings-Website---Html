@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from www.nurseitmukaytegin.com/envato-templates/xen/portfolio_full_screen.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Jan 2021 10:59:15 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Particpate</title>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7COswald:300,400,500,600,700"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <link rel="icon" href="../wp-content/uploads/2019/09/cropped-FX-ICON-BOX-WEB-32x32.png" sizes="32x32" />
+    <link rel="icon" href="../wp-content/uploads/2019/09/cropped-FX-ICON-BOX-WEB-192x192.png" sizes="192x192" />
+    <link rel="stylesheet" id="buran-fonts-css"
+        href="https://fonts.googleapis.com/css?family=Roboto%3A400%2C700%2C900%2C400italic%2C700italic%2C900italic%7CDosis%3A200%2C300%2C400%2C500%2C600%2C700%2C800%26amp%3Bsubset%3Dlatin-ext&amp;subset=latin%2Clatin-ext"
+        type="text/css" media="all" />
+    <!-- styles -->
+    <link href="../assets/css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- <link rel="stylesheet" href="./css/custom-style.css" type="text/css" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            /* overflow: auto !important; */
+            margin: 0;
+            background-color: #000000;
+        }
+
+        @font-face {
+            font-family: "Amplitude-Black";
+            font-style: normal;
+            font-display: block;
+            src: url(Amplitude-Black_3531.ttf);
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: black;
+            font-family: "Roboto";
+        }
+
+        .swiper-container-vertical>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+            top: 40% !important;
+        }
+
+        .fixed-bottom {
+            position: fixed !important;
+            right: 0;
+            bottom: 0 !important;
+            left: 0;
+            z-index: 1030 !important;
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            /* For mobile phones: */
+            .custom-image-inner {
+                display: flex;
+                align-items: center;
+            }
+
+            .custom-image {
+                height: auto;
+            }
+        }
+
+        @font-face {
+            font-family: "RobotoLight";
+            font-display: block;
+            src: url("../wp-content/fonts/roboto/Roboto-Light.ttf");
+        }
+
+        @font-face {
+            font-family: "RobotoThin";
+            font-display: block;
+            src: url("../wp-content/fonts/roboto/Roboto-Thin.ttf");
+        }
+
+        @font-face {
+            font-family: "RobotoBold";
+            font-display: block;
+            src: url("../wp-content/fonts/roboto/Roboto-Bold.ttf");
+        }
+
+        .navbar {
+            padding: 2.3rem 0rem;
+            height: 133.5px;
+        }
+
+        footer {
+            height: 53px;
+        }
+
+        .active {
+            color: #973637 !important;
+            background: #fff !important;
+            font-weight: bold !important;
+        }
+
+        .textbox1 {
+            width: 100%;
+            /* height: 100vh; */
+            background-color: #2b0047 !important;
+        }
+
+        .box1 {
+            color: #ffffff;
+            font-family: "RobotoThin" !important;
+            font-size: 2.5vw;
+            line-height: 1.1;
+            display: block;
+            position: relative;
+            top: 20%;
+            padding: 0 16%;
+            animation: fadeleft 3s;
+            -moz-animation: fadeleft 3s;
+            /* Firefox */
+            -webkit-animation: fadeleft 3s;
+            /* Safari and Chrome */
+            -o-animation: faderleft 3s;
+            /* Opera */
+        }
+
+        .box1 span {
+            font-family: "Roboto" !important;
+            font-weight: bold;
+        }
+
+        .imagebox2 {
+            width: 100%;
+            background-color: #e700c4;
+        }
+
+        .box2 {
+            background-color: #e700c4;
+            height: 100%;
+            width: 100%;
+            display: block;
+        }
+
+        .box2_text {
+            color: #f5f5f5;
+            font-family: "RobotoThin";
+            font-size: 4.8rem;
+            line-height: 0.8;
+            padding: 16% 8%;
+        }
+
+        .box2_text span {
+            font-family: "Roboto";
+            font-weight: bold;
+        }
+
+        .box2-hover {
+            background-color: #e7cce3;
+            height: 100%;
+            width: 100%;
+            display: block;
+            /* z-index: 999; */
+            -webkit-animation-name: fadeInRight;
+            animation-name: fadeInRight;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        .textbox3 {
+            width: 100%;
+            background-color: #db328a;
+        }
+
+        .box3 {
+            background-color: #db328a;
+            height: 100%;
+            width: 100%;
+            display: block;
+        }
+
+        .box3_text {
+            color: #f5f5f5;
+            font-family: "RobotoThin";
+            font-size: 4.8rem;
+            line-height: 0.7;
+            padding: 16% 8%;
+        }
+
+        .box3_text span {
+            font-family: "Roboto";
+            font-weight: bold;
+        }
+
+        .box3-hover {
+            background-image: url(../wp-content/uploads/2021/new/box3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100%;
+            width: 100%;
+            display: block;
+            -webkit-animation-name: fadeInUp;
+            animation-name: fadeInUp;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        .box3-hover::after {
+            position: absolute;
+            content: " ";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            background-color: rgba(219, 50, 138, 0.6);
+        }
+
+        .imagebox4 {
+            width: 100%;
+            background-color: black;
+        }
+
+        .box4 {
+            background-image: url(../wp-content/uploads/2021/new/Mountain.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .box4_text {
+            color: #f5f5f5;
+            font-family: "RobotoThin";
+            font-size: 4.8rem;
+            line-height: 0.8;
+            padding: 16% 8%;
+        }
+
+        .box4_text span {
+            font-family: "Roboto";
+            font-weight: bold;
+        }
+
+        .box4-hover {
+            background-color: #a3bbf7;
+            width: 50%;
+            height: 100%;
+            float: right;
+            -webkit-animation-name: fadeInLeft;
+            animation-name: fadeInLeft;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        .box4_overlay {
+            width: 50%;
+            height: 100%;
+            float: right;
+            background-color: #8dacfcad;
+        }
+
+        .textbox5 {
+            width: 100%;
+            background-color: #f16b83;
+        }
+
+        .box5 {
+            background-color: #f16b83;
+            height: 100%;
+            width: 100%;
+            display: block;
+        }
+
+        .box5_text {
+            color: #f5f5f5;
+            font-family: "RobotoThin";
+            font-size: 4.8rem;
+            line-height: 0.8;
+            padding: 16% 8%;
+        }
+
+        .box5_text span {
+            font-family: "Roboto";
+            font-weight: bold;
+        }
+
+        .box5-hover {
+            background-color: #f1c9d0;
+            height: 100%;
+            width: 100%;
+            display: block;
+            -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+            -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        .textbox6 {
+            width: 100%;
+        }
+
+        .box6 {
+            background-color: #0000ff;
+            height: 100%;
+            width: 100%;
+            display: block;
+        }
+
+        .box6_text {
+            color: #f5f5f5;
+            font-family: "RobotoThin";
+            font-size: 1.3rem;
+            line-height: 1.2;
+            position: relative;
+            top: 41%;
+            padding: 0 12%;
+            -webkit-animation-name: bounceInUp;
+            animation-name: bounceInUp;
+            -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        .box6_text span {
+            font-family: "Roboto";
+            font-weight: bold;
+        }
+
+        /* .hover-text2 .big-size, .hover-text3 .big-size, .hover-text4 .big-size, .hover-text5 .big-size {
+        position: relative;
+      } */
+        /* .hover-text2 .small-size, .hover-text3 .small-size, .hover-text4 .small-size, .hover-text5 .small-size {
+        position: relative;
+        bottom: 25px;
+      } */
+        /* .hover-text2 {
+        color: #0000ff;
+      }
+      .hover-text3 {
+        color: #f5f5f5;
+      }
+      .hover-text4 {
+        color: #000000;
+      }
+      .hover-text5 {
+        color: #f5f5f5;
+      } */
+        @-webkit-keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateX(50px);
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translate(0);
+            }
+        }
+
+        @-webkit-keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateX(-30px);
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @-webkit-keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(50px);
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @-webkit-keyframes fadeIn {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateZ(100px);
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: translateZ(0px);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateZ(100px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateZ(0px);
+            }
+        }
+
+        @keyframes fadeleft {
+            0% {
+                opacity: 0;
+                transform: translateX(-80px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @-moz-keyframes fadeleft {
+
+            /* Firefox */
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes fadeleft {
+
+            /* Safari and Chrome */
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @-o-keyframes fadeleft {
+
+            /* Opera */
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes bounceInUp {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(2000px);
+            }
+
+            60% {
+                opacity: 1;
+                -webkit-transform: translateY(-30px);
+            }
+
+            80% {
+                -webkit-transform: translateY(10px);
+            }
+
+            100% {
+                -webkit-transform: translateY(0);
+            }
+        }
+
+        @keyframes bounceInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+
+            60% {
+                opacity: 1;
+                transform: translateY(-30px);
+            }
+
+            80% {
+                transform: translateY(10px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .hover-text2 {
+            color: #e700c4;
+        }
+
+        .hover-text4 {
+            color: #0000ff;
+        }
+
+        .hover-text5 {
+            color: #f16b83;
+        }
+
+        .rempad {
+            height: -moz-calc(100vh - 133.5px - 53px);
+            /* Firefox */
+            height: -webkit-calc(100vh - 133.5px - 53px);
+            /* Chrome, Safari */
+            height: calc(100vh - 133.5px - 53px);
+        }
+
+        .hover-text2 {
+            font-family: "RobotoThin";
+            position: relative;
+            top: 14%;
+            left: 12%;
+            z-index: 999;
+            line-height: 0.8;
+        }
+
+        .hover-text4 {
+            font-family: "RobotoThin";
+            position: relative;
+            z-index: 999;
+            top: 22%;
+            left: 8%;
+            line-height: 0.8;
+        }
+
+        .hover-text5 {
+            font-family: "RobotoThin";
+            position: relative;
+            top: 18%;
+            left: 12%;
+            z-index: 999;
+            line-height: 0.5;
+        }
+
+        .hover-text2 .bold-size,
+        .hover-text4 .bold-size,
+        .hover-text5 .bold-size {
+            font-family: "Roboto";
+            font-weight: bold;
+            font-size: 2.9rem;
+            line-height: 1.5;
+        }
+
+        .hover-text2 .small-size,
+        .hover-text4 .small-size,
+        .hover-text5 .small-size {
+            font-family: "RobotoThin" !important;
+            font-size: 2.8rem;
+        }
+
+        .big-size span {
+            font-family: "RobotoThin" !important;
+            font-size: 6rem;
+            font-weight: 500 !important;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                overflow: visible;
+            }
+
+            .textbox1,
+            .imagebox2,
+            .imagebox4,
+            .textbox5,
+            .textbox6 {
+                height: 300px !important;
+            }
+
+            footer {
+                height: 73px;
+            }
+
+            .box1 {
+                font-size: 6vw !important;
+            }
+
+            .box6_text {
+                top: 25%;
+            }
+
+            .power {
+                font-size: 7vw !important;
+            }
+
+            .hamburger {
+                left: 45% !important;
+            }
+
+            .content-cont {
+                overflow: auto !important;
+            }
+
+            .footer {
+                padding: 24px 0 0 0;
+            }
+
+            .text-left span {
+                font-size: 10px !important;
+            }
+
+            .menu-items h1 {
+                font-size: 8vw !important;
+            }
+        }
+
+        @media screen and (min-width:1399px) and (max-width:1499px) {
+            .box1 {
+                font-size: 3vw !important;
+                top: 20% !important;
+                padding: 0 14% !important;
+            }
+
+            .box2_text,
+            .box4_text,
+            .box5_text {
+                font-size: 6rem !important;
+                padding: 20% 10% !important;
+            }
+
+            .hover-text2 {
+                top: 21%;
+                left: 12%;
+            }
+
+            .hover-text4 {
+                top: 28%;
+                left: 8%;
+            }
+
+            .hover-text5 {
+                top: 24%;
+                left: 12%;
+            }
+
+            .navbar .container {
+                max-width: 1350px !important;
+            }
+        }
+
+        @media screen and (min-width:1500px) and (max-width:1800px) {
+            .box1 {
+                font-size: 3vw !important;
+                top: 17% !important;
+                padding: 0 11% !important;
+            }
+
+            .box2_text,
+            .box4_text,
+            .box5_text {
+                font-size: 7rem;
+                padding: 14.5% 8% !important;
+            }
+
+            .hover-text2 {
+                top: 21%;
+                left: 12%;
+            }
+
+            .hover-text4 {
+                top: 28%;
+                left: 8%;
+            }
+
+            .hover-text5 {
+                top: 24%;
+                left: 12%;
+            }
+        }
+
+        @media screen and (min-width:1801px) and (max-width:2300px) {
+            .box1 {
+                font-size: 3.2vw !important;
+                top: 17% !important;
+                padding: 0 11% !important;
+            }
+
+            .box2_text,
+            .box4_text,
+            .box5_text {
+                font-size: 8rem !important;
+                padding: 19% 8% !important;
+            }
+
+            .box6_text {
+                font-size: 1.5rem !important;
+                top: 44% !important;
+                padding: 0 18% !important;
+            }
+
+            .hover-text2 .bold-size,
+            .hover-text4 .bold-size,
+            .hover-text5 .bold-size {
+                font-size: 3.9rem !important;
+            }
+
+            .hover-text2 .small-size,
+            .hover-text4 .small-size,
+            .hover-text5 .small-size {
+                font-size: 3.8rem !important;
+            }
+
+            .big-size span {
+                font-size: 8rem !important;
+            }
+
+            .hover-text2 {
+                top: 20%;
+                left: 14%;
+            }
+
+            .hover-text4 {
+                top: 29%;
+                left: 10%;
+            }
+
+            .hover-text5 {
+                top: 28%;
+                left: 14%;
+            }
+
+            .navbar .container {
+                max-width: 1810px !important;
+            }
+        }
+
+        @media screen and (min-width:2301px) and (max-width:3300px) {
+            .box1 {
+                font-size: 3.2vw !important;
+                top: 20% !important;
+                padding: 0 11% !important;
+            }
+
+            .box2_text,
+            .box4_text,
+            .box5_text {
+                font-size: 10rem !important;
+                padding: 24% 8% !important;
+            }
+
+            .box6_text {
+                font-size: 2rem !important;
+                top: 45% !important;
+                padding: 0 18% !important;
+            }
+
+            .hover-text2 .bold-size,
+            .hover-text4 .bold-size,
+            .hover-text5 .bold-size {
+                font-size: 5rem !important;
+            }
+
+            .hover-text2 .small-size,
+            .hover-text4 .small-size,
+            .hover-text5 .small-size {
+                font-size: 5rem !important;
+            }
+
+            .big-size span {
+                font-size: 9.5rem !important;
+            }
+
+            .hover-text2 {
+                top: 25%;
+                left: 15%;
+            }
+
+            .hover-text4 {
+                top: 31%;
+                left: 10%;
+            }
+
+            .hover-text5 {
+                top: 30%;
+                left: 18%;
+            }
+
+            .navbar .container {
+                max-width: 2410px !important;
+            }
+        }
+
+        @media screen and (min-width: 2800px) and (max-width: 3000px) {
+            .power {
+                position: relative;
+                right: 5.5vw;
+            }
+
+            .icon-one {
+                right: -5vw !important;
+            }
+        }
+
+        @media screen and (min-width: 5000px) {
+            .power {
+                position: relative;
+                right: 11.5vw;
+            }
+
+            .icon-one {
+                right: -10vw !important;
+            }
+        }
+
+        @media screen and (min-width:3301px) {
+            .box1 {
+                font-size: 3.2vw !important;
+                top: 22% !important;
+                padding: 0 11% !important;
+            }
+
+            .box2_text,
+            .box4_text,
+            .box5_text {
+                font-size: 17rem !important;
+                padding: 24% 8% !important;
+            }
+
+            .box6_text {
+                font-size: 3rem !important;
+                top: 45% !important;
+                padding: 0 19% !important;
+            }
+
+            .hover-text2 .bold-size,
+            .hover-text4 .bold-size,
+            .hover-text5 .bold-size {
+                font-size: 8rem !important;
+            }
+
+            .hover-text2 .small-size,
+            .hover-text4 .small-size,
+            .hover-text5 .small-size {
+                font-size: 8rem !important;
+            }
+
+            .big-size span {
+                font-size: 16rem !important;
+            }
+
+            .hover-text2 {
+                top: 26%;
+                left: 13%;
+            }
+
+            .hover-text4 {
+                top: 31%;
+                left: 10%;
+            }
+
+            .hover-text5 {
+                top: 30%;
+                left: 15%;
+            }
+
+            .navbar .container {
+                max-width: 3600px !important;
+            }
+
+            .power {
+                font-size: 2.5vw !important;
+            }
+        }
+
+        .fx_background {
+            background: url(../img/fx_background.jpg) center no-repeat fixed;
+            background-size: cover;
+            height: 100vh;
+            top: 0;
+            right: 0;
+            left: 0;
+            position: fixed;
+        }
+
+        .power {
+            color: #ffffff;
+            font-family: "RobotoBold" !important;
+            font-size: 4.5vw;
+        }
+
+        .hamburger {
+            top: 50%;
+            left: 10%;
+            width: 50px;
+            height: 6px;
+            background: #FCFCFC;
+            position: absolute;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+            transition: 0.5s;
+        }
+
+        .hamburger:before {
+            top: -16px;
+        }
+
+        .hamburger:after {
+            top: 16px;
+        }
+
+
+
+        /* Icon 1 */
+        .icon-one {
+            position: absolute;
+            /* top: 10%; */
+            right: 0;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hamburger-one:before,
+        .hamburger-one:after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 6px;
+            background: #FCFCFC;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: 0.5s;
+        }
+
+        .icon-one.active-one .hamburger-one {
+            background: rgba(0, 0, 0, 0);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+        }
+
+        .icon-one.active-one .hamburger-one:before {
+            top: 0;
+            transform: rotate(45deg);
+        }
+
+        .icon-one.active-one .hamburger-one:after {
+            top: 0;
+            transform: rotate(135deg);
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu_content {
+            background-color: rgba(0, 0, 0, .2);
+            width: 0;
+            /* position: fixed; */
+            /* z-index: 1;
+            right: 0;
+            left: 0; */
+            overflow: hidden;
+            transition: 0.5s;
+        }
+
+        .menu-items {
+            float: right;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+            height: 100%;
+            padding-right: 5vw;
+            /* animation: fadeleft 3s;
+            -moz-animation: fadeleft 3s;
+            -webkit-animation: fadeleft 3s;
+            -o-animation: faderleft 3s; */
+        }
+
+        .menu-items h1 {
+            color: #363636;
+            font-family: "RobotoThin";
+            font-size: 4vw;
+        }
+
+        .menu-items h1 span {
+            font-family: "RobotoBold";
+        }
+
+        .menu-items h1:hover {
+            cursor: pointer;
+            color: #ffffff;
+        }
+
+        .animated {
+            background-repeat: no-repeat;
+            background-position: left top;
+            -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="fx_background">
+
+        <!-- loading start -->
+
+        <!-- pointer start -->
+
+        <!-- nav-container start -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top extra-pad"
+            style="background-color: transparent !important; font-family: 'Roboto'">
+            <div class="container" style="max-width: 1275px">
+                <a class="navbar-brand" href="../index21.html">
+                    <!-- <img src="img/FX-ICON-BOX-WEB.png"
+                    style="width: 50px !important" width="50" height="50" /> -->
+                    <h1 class="power">the Power of ONE</h1>
+                </a>
+
+                <div class="icon-one">
+                    <div class="hamburger hamburger-one"></div>
+                </div>
+
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="inside-fx/index.html">INSIDE FX</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="a-vision/index.html">A VISION</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="credentials/index.html">CREDENTIALS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="participate/index.html">PARTICIPATE</a>
+                </li>
+            </ul>
+        </div> -->
+            </div>
+        </nav>
+
+
+        <div class="container-fluid content-cont rempad" style="margin-top: 8.4rem; padding: 0px;">
+            <div class="row no-gutters rempad part-row">
+                <div class="col-lg-3 col-md-12 col-sm-12 textbox1">
+                    <div class="box1">
+                        Let <span>FX</span> take <br />
+                        <span>your vision</span> <br />
+                        a step <span>further</span> <br />
+                        and become <br />
+                        <span>better</span> <br />
+                        <span>connected</span> <br />
+                        to the rest <br />
+                        of the <span>world.</span>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row no-gutters h-50" id="first-row">
+                        <div class="col-lg-4 col-md-12 col-sm-12 imagebox2">
+                            <div class="box2">
+                                <div class="box2_text">
+                                    <span>Cli</span> <br />
+                                    ents
+                                </div>
+                            </div>
+                            <a href="../clients/index.html">
+                                <div class="box2-hover" style="display: none;">
+                                    <div class="hover-text2">
+                                        <div class="small-size">
+                                            Bring
+                                        </div>
+                                        <div class="big-size">
+                                            <span>your</span>
+                                        </div>
+                                        <span class="bold-size">endeavors</span> &nbsp; &nbsp; &nbsp; &nbsp; <span
+                                            class="small-size">></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- <div class="col-lg-4 col-md-12 col-sm-12 textbox3">
+                    <div class="box3">
+                        <div class="box3_text">
+                          En<span>ter</span> <br/>
+                          tain <br/>
+                          <span>me</span>nt <br/>
+                        </div>
+                    </div>
+                    <div class="box3-hover" style="display: none;">
+                      <div class="hover-text3">
+                        <div class="big-size">
+                          En<span>ter</span>tain<span>me</span>nt
+                        </div>
+                        <div class="small-size">
+                          Merging <span>Sports,</span> Real <br/>
+                        <span>Estate</span>, and <span>Music</span> 
+                        </div>
+                      </div>
+                    </div>
+                </div> -->
+                        <div class="col-lg-8 col-md-12 col-sm-12 imagebox4">
+                            <div class="box4">
+                                <div class="box4_overlay">
+                                    <div class="box4_text">
+                                        Part <br />
+                                        <span>ners</span>
+                                    </div>
+                                </div>
+                                <a href="../partners/index.html">
+                                    <div class="box4-hover" style="display: none;">
+                                        <div class="hover-text4">
+                                            <div class="big-size">
+                                                <span>Step</span>
+                                            </div>
+                                            <span class="bold-size">inside</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                            &nbsp;
+                                            &nbsp; <span class="small-size">></span>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row no-gutters h-50" id="second-row">
+                        <div class="col-lg-4 col-md-12 col-sm-12 textbox5">
+                            <div class="box5">
+                                <div class="box5_text">
+                                    Mem <br />
+                                    <span>bers</span>
+                                </div>
+                            </div>
+                            <a href="../members/index.html">
+                                <div class="box5-hover" style="display: none;">
+                                    <div class="hover-text5">
+                                        <span class="bold-size">Join</span> &nbsp; <span class="small-size">our</span>
+                                        <div class="big-size">
+                                            <span>team</span> &nbsp; &nbsp; &nbsp; &nbsp; <span
+                                                class="small-size">></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-sm-12 textbox6">
+                            <div class="box6">
+                                <div class="box6_text">
+                                    Our <span>alliances</span> provide <span>access</span> to broaden <span>local</span>
+                                    know-how, <br />
+                                    industry <span>specification</span> and <span>diversity</span> of
+                                    <span>cultures.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="menu_content rempad">
+                <div class="row rempad">
+                    <div class="col-6 menu-items" style="display: none;">
+                        <a href="../inside-fx/index.html">
+                            <h1><span>Inside</span></h1>
+                        </a>
+                        <a href="../a-vision/index.html">
+                            <h1>Vision</h1>
+                        </a>
+                        <a href="../credentials/index.html">
+                            <h1><span>Credentials</span></h1>
+                        </a>
+                        <a href="../participate/index.html">
+                            <h1>Participate</h1>
+                        </a>
+                    </div>
+                    <div class="col-6">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- footer start -->
+        <footer class="footer bg-light fixed-bottom"
+            style="background-color: transparent !important; font-family: Roboto !important">
+
+            <div class="container-fluid text-left">
+
+                <span style="margin: 0; font-size: 12px; color: #838586; left: 3.7%; position: relative;">
+                    Copyright © 2005 - 2020 FX Holdings Ag and/or its affiliates. All
+                    Rights Reserved. An FX Registered
+                    Company.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="legal-information/index.html"
+                        style="color: #ffffff !important; font-family: RobotoBold !important ">Legal Information
+                    </a>
+                    <!-- <a href="#" style="color: #973637 !important; font-family: Roboto !important; float:right; font-size: 16px;
+        font-weight:bold; position:relative; right: 7%;">
+                    The Power of One</a> -->
+                </span>
+
+                <!-- <span style="margin: 0; font-size: 12px">
+        <a href="legal-information/index.html" style="color: #af1107 !important; font-family: Roboto !important; float:left;
+        position:relative; left: 12%;">
+          Legal
+          Information</a>
+        Copyright © 2005 - 2021 FX Holdings Ag and/or its affiliates. All
+        Rights Reserved. An FX Registered
+        Company. -->
+
+                <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+
+                <!-- <a href="#" style="color: #af1107 !important; font-family: Roboto !important; float:right;
+        position:relative; right: 12%;">
+          The Power of One</a>
+        </span>  -->
+
+            </div>
+
+        </footer>
+        <!-- footer end -->
+    </div>
+
+
+    <!-- scripts -->
+
+    <script>
+        $(function () {
+            $('.imagebox2').hover(function () {
+                $('.box2-hover').css('display', 'block');
+                $('.box2').css('display', 'none');
+            }, function () {
+                $('.box2-hover').css('display', 'none');
+                $('.box2').css('display', 'block');
+            });
+
+            $('.textbox3').hover(function () {
+                $('.box3-hover').css('display', 'block');
+                $('.box3').css('display', 'none');
+
+            }, function () {
+                $('.box3-hover').css('display', 'none');
+                $('.box3').css('display', 'block');
+
+            });
+
+            $('.box4').hover(function () {
+                $('.box4-hover').css('display', 'block');
+                $('.box4_overlay').css('display', 'none');
+            }, function () {
+                $('.box4-hover').css('display', 'none');
+                $('.box4_overlay').css('display', 'block');
+            });
+
+            $('.textbox5').hover(function () {
+                $('.box5-hover').css('display', 'block');
+                $('.box5').css('display', 'none');
+            }, function () {
+                $('.box5-hover').css('display', 'none');
+                $('.box5').css('display', 'block');
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.icon-one').click(function () {
+                if ($(this).hasClass('active-one')) {
+                    $(".menu_content").css('width', '0');
+                    $(".part-row").css('display', 'flex');
+                    $('.icon-one').removeClass('active-one');
+                }
+                else {
+                    $('.icon-one').toggleClass('active-one');
+                    // $("#video").css('display', 'none');
+                    // $("#backgroundColor").css('display', 'none');
+                    $(".part-row").css('display', 'none');
+                    $(".menu_content").css('width', '100%');
+                }
+
+                const element = document.querySelector('.menu-items');
+                element.classList.add('animated', 'fadeInLeft');
+                setTimeout(function () {
+                    element.classList.remove('fadeInLeft');
+                }, 1500);
+
+            });
+
+
+
+            setTimeout(() => {
+
+                $('.menu-items').css('display', 'flex');
+
+            }, 1000);
+
+        });
+    </script>
+
+
+    <!-- <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/main.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from www.nurseitmukaytegin.com/envato-templates/xen/portfolio_full_screen.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Jan 2021 11:01:23 GMT -->
+
+</html>

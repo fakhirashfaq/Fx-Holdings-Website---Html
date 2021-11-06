@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Holdings</title>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7COswald:300,400,500,600,700"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <link rel="icon" href="wp-content/uploads/2019/09/cropped-FX-ICON-BOX-WEB-32x32.png" sizes="32x32" />
+    <link rel="icon" href="wp-content/uploads/2019/09/cropped-FX-ICON-BOX-WEB-192x192.png" sizes="192x192" />
+    <link rel="stylesheet" id="buran-fonts-css"
+        href="https://fonts.googleapis.com/css?family=Roboto%3A400%2C700%2C900%2C400italic%2C700italic%2C900italic%7CDosis%3A200%2C300%2C400%2C500%2C600%2C700%2C800%26amp%3Bsubset%3Dlatin-ext&amp;subset=latin%2Clatin-ext"
+        type="text/css" media="all" />
+    <!-- styles -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/jquery.hoverIntent.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #000000;
+        }
+
+        @font-face {
+            font-family: "Amplitude-Black";
+            font-style: normal;
+            font-display: block;
+            src: url(Amplitude-Black_3531.ttf);
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: black;
+            font-family: "Roboto";
+        }
+
+        .fixed-bottom {
+            position: fixed !important;
+            right: 0;
+            bottom: 0 !important;
+            left: 0;
+            z-index: 1030 !important;
+        }
+
+        @font-face {
+            font-family: "RobotoLight";
+            font-display: block;
+            src: url("wp-content/fonts/roboto/Roboto-Light.ttf");
+        }
+
+        @font-face {
+            font-family: "RobotoThin";
+            font-display: block;
+            src: url("wp-content/fonts/roboto/Roboto-Thin.ttf");
+        }
+
+        @font-face {
+            font-family: "RobotoBold";
+            font-display: block;
+            src: url("wp-content/fonts/roboto/Roboto-Bold.ttf");
+        }
+
+
+        .rempad {
+            height: -moz-calc(100vh - 133.5px - 53px);
+            /* Firefox */
+            height: -webkit-calc(100vh - 133.5px - 53px);
+            /* Chrome, Safari */
+            height: calc(100vh - 133.5px - 53px);
+        }
+    </style>
+    <style>
+        .navbar {
+            padding: 2.3rem 0rem;
+            height: 133.5px;
+        }
+
+        footer {
+            height: 53px;
+        }
+
+        .active {
+            color: #973637 !important;
+            background: #fff !important;
+            font-weight: bold !important;
+        }
+
+        @media screen and (max-width: 900px) {
+            body {
+                overflow: auto !important;
+            }
+        }
+
+        @media screen and (min-width:1399px) and (max-width:1499px) {
+            .navbar .container {
+                max-width: 1350px !important;
+            }
+        }
+
+        @media screen and (min-width:1801px) and (max-width:2300px) {
+            .navbar .container {
+                max-width: 1810px !important;
+            }
+        }
+
+        @media screen and (min-width:2301px) and (max-width:3300px) {
+            .navbar .container {
+                max-width: 2410px !important;
+            }
+        }
+
+        @media screen and (min-width:3301px) {
+            .navbar .container {
+                max-width: 3600px !important;
+            }
+
+            .power {
+                font-size: 2.5vw !important;
+            }
+        }
+    </style>
+
+    <style>
+        .text-box1 {
+            background-color: #363636;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box1 {
+            color: #ffffff;
+            font-family: "RobotoThin" !important;
+            font-size: 3.2vw;
+            line-height: 1.1;
+            animation: fadeleft 3s;
+            -moz-animation: fadeleft 3s;
+            /* Firefox */
+            -webkit-animation: fadeleft 3s;
+            /* Safari and Chrome */
+            -o-animation: fadeleft 3s;
+            /* Opera */
+        }
+
+        .box1 span {
+            font-family: "Roboto" !important;
+            font-weight: bold;
+        }
+
+        .image-box2 {
+            background-color: darkblue;
+        }
+
+        .box2 {
+            background-image: url(wp-content/uploads/2021/new/box2_optimized.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding-left: 2vw;
+        }
+
+        .text-box3 {
+            background-color: #e8086c;
+        }
+
+        .box3 {
+            background-color: #e8086c;
+            height: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding-left: 2vw;
+        }
+
+        .image-box4 {
+            background-color: black;
+        }
+
+        .box4 {
+            background-image: url(wp-content/uploads/2021/new/box4_optimized.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding-left: 2vw;
+        }
+
+        .text-box5 {
+            background-color: #4da400;
+        }
+
+        .box5 {
+            background-color: #4da400;
+            height: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding-left: 2vw;
+            padding-bottom: 2vh;
+        }
+
+        .text-box6 {
+            background-color: #53b8b3;
+        }
+
+        .box6 {
+            background-color: #53b8b3;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box2-text {
+            color: #f5f5f5;
+            font-family: "RobotoThin";
+            font-size: 6.5vw;
+            line-height: 0.7;
+        }
+
+        .box2-text span {
+            font-family: "Roboto";
+            font-weight: bold;
+        }
+
+        .box3-text {
+            color: #dbdbdb;
+            font-family: "RobotoThin";
+            font-size: 6.5vw;
+            line-height: 0.7;
+        }
+
+        .box3-text span {
+            font-family: "Roboto";
+            font-weight: bold;
+        }
+
+        .box4-text {
+            color: #ffb006;
+            font-family: "RobotoThin";
+            font-size: 6.5vw;
+            line-height: 0.7;
+        }
+
+        .box4-text span {
+            font-family: "Roboto";
+            font-weight: bold;
+            color: #dbdbdb !important;
+        }
+
+        .box5-text {
+            color: #dbdbdb;
+            font-family: "RobotoThin";
+            font-size: 6.5vw;
+            line-height: 0.7;
+        }
+
+        .box5-text span {
+            font-family: "Roboto";
+            font-weight: bold;
+        }
+
+        .box6-text {
+            color: #ffffff;
+            font-family: "RobotoThin";
+            font-size: 1.5vw;
+            line-height: 1.2;
+            -webkit-animation-name: bounceInUp;
+            animation-name: bounceInUp;
+            -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        .box6-text span {
+            font-family: "Roboto";
+            font-weight: bold;
+        }
+
+        .big-size {
+            font-size: 3.2vw;
+            padding-bottom: 16vh;
+        }
+
+        .small-size {
+            font-size: 1.3vw;
+            line-height: 1.2;
+        }
+
+        .box2-hover {
+            background-image: url(wp-content/uploads/2021/new/box2-hover_optimized.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: baseline;
+            padding-bottom: 1vh;
+            -webkit-animation-name: fadeInRight;
+            animation-name: fadeInRight;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        .hover-text2 {
+            font-family: "RobotoThin";
+            color: #0000ff;
+            padding-left: 2vw;
+            padding-bottom: 1vh;
+        }
+
+        .hover-text2 span {
+            font-family: "Roboto";
+            font-weight: bold;
+        }
+
+        .box3-hover {
+            background-image: url(wp-content/uploads/2021/new/box3_optimized.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: baseline;
+            padding-bottom: 1vh;
+            -webkit-animation-name: fadeInUp;
+            animation-name: fadeInUp;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        .box3-hover::after {
+            position: absolute;
+            content: " ";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            background-color: rgba(219, 50, 138, 0.6);
+        }
+
+        .hover-text3 {
+            font-family: "RobotoThin";
+            color: #f5f5f5;
+            padding-left: 2vw;
+            padding-bottom: 1vh;
+            z-index: 2;
+        }
+
+        .hover-text3 span {
+            font-family: "Roboto";
+            font-weight: bold;
+        }
+
+        .box4-hover {
+            background-image: url(wp-content/uploads/2021/new/box4-hover_optimized.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: baseline;
+            padding-bottom: 1vh;
+            -webkit-animation-name: fadeInLeft;
+            animation-name: fadeInLeft;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        .hover-text4 {
+            font-family: "RobotoThin";
+            color: #000000;
+            padding-left: 2vw;
+            padding-bottom: 1vh;
+        }
+
+        .hover-text4 span {
+            font-family: "Roboto";
+            font-weight: bold;
+        }
+
+        .box5-hover {
+            background-image: url(wp-content/uploads/2021/new/box5_optimized.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: baseline;
+            padding-bottom: 1vh;
+            -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+            -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        .hover-text5 {
+            font-family: "RobotoThin";
+            color: #f5f5f5;
+            padding-left: 2vw;
+            padding-bottom: 1vh;
+        }
+
+        .hover-text5 span {
+            font-family: "Roboto";
+            font-weight: bold;
+        }
+
+        @keyframes fadeleft {
+
+            0% {
+
+                opacity: 0;
+
+                transform: translateX(-80px);
+
+            }
+
+            100% {
+
+                opacity: 1;
+
+                transform: translateX(0);
+
+            }
+
+        }
+
+        @-moz-keyframes fadeleft {
+
+            /* Firefox */
+
+            from {
+
+                opacity: 0;
+
+            }
+
+            to {
+
+                opacity: 1;
+
+            }
+
+        }
+
+        @-webkit-keyframes fadeleft {
+
+            /* Safari and Chrome */
+
+            from {
+
+                opacity: 0;
+
+            }
+
+            to {
+
+                opacity: 1;
+
+            }
+
+        }
+
+        @-o-keyframes fadeleft {
+
+            /* Opera */
+
+            from {
+
+                opacity: 0;
+
+            }
+
+            to {
+
+                opacity: 1;
+
+            }
+
+        }
+
+        @-webkit-keyframes fadeInRight {
+
+            0% {
+
+                opacity: 0;
+
+                -webkit-transform: translateX(50px);
+
+            }
+
+            100% {
+
+                opacity: 1;
+
+                -webkit-transform: translateX(0);
+
+            }
+
+        }
+
+        @keyframes fadeInRight {
+
+            0% {
+
+                opacity: 0;
+
+                transform: translateX(50px);
+
+            }
+
+            100% {
+
+                opacity: 1;
+
+                transform: translate(0);
+
+            }
+
+        }
+
+        @keyframes fadeInUp {
+
+            0% {
+
+                opacity: 0;
+
+                transform: translateY(50px);
+
+            }
+
+            100% {
+
+                opacity: 1;
+
+                transform: translateY(0);
+
+            }
+
+        }
+
+        @-webkit-keyframes fadeInUp {
+
+            0% {
+
+                opacity: 0;
+
+                -webkit-transform: translateY(50px);
+
+            }
+
+            100% {
+
+                opacity: 1;
+
+                -webkit-transform: translateY(0);
+
+            }
+
+        }
+
+        @keyframes fadeInLeft {
+
+            0% {
+
+                opacity: 0;
+
+                transform: translateX(-30px);
+
+            }
+
+            100% {
+
+                opacity: 1;
+
+                transform: translate(0);
+
+            }
+
+        }
+
+        @-webkit-keyframes fadeInLeft {
+
+            0% {
+
+                opacity: 0;
+
+                transform: translateX(-30px);
+
+            }
+
+            100% {
+
+                opacity: 1;
+
+                transform: translate(0);
+
+            }
+
+        }
+
+        @-webkit-keyframes fadeIn {
+
+            0% {
+
+                opacity: 0;
+
+                -webkit-transform: translateZ(100px);
+
+            }
+
+            100% {
+
+                opacity: 1;
+
+                -webkit-transform: translateZ(0px);
+
+            }
+
+        }
+
+
+
+        @keyframes fadeIn {
+
+            0% {
+
+                opacity: 0;
+
+                transform: translateZ(100px);
+
+            }
+
+            100% {
+
+                opacity: 1;
+
+                transform: translateZ(0px);
+
+            }
+
+        }
+
+        @-webkit-keyframes bounceInUp {
+
+            0% {
+
+                opacity: 0;
+
+                -webkit-transform: translateY(2000px);
+
+            }
+
+            60% {
+
+                opacity: 1;
+
+                -webkit-transform: translateY(-30px);
+
+            }
+
+            80% {
+
+                -webkit-transform: translateY(10px);
+
+            }
+
+            100% {
+
+                -webkit-transform: translateY(0);
+
+            }
+
+        }
+
+
+
+        @keyframes bounceInUp {
+
+            0% {
+
+                opacity: 0;
+
+                transform: translateY(100px);
+
+            }
+
+            60% {
+
+                opacity: 1;
+
+                transform: translateY(-30px);
+
+            }
+
+            80% {
+
+                transform: translateY(10px);
+
+            }
+
+            100% {
+
+                transform: translateY(0);
+
+            }
+
+        }
+
+        @keyframes fadeInRightMain {
+
+            0% {
+
+                opacity: 1;
+
+                -webkit-transform: translateX(100vw);
+
+            }
+
+            50% {
+                opacity: 1;
+
+                -webkit-transform: translateX(0);
+            }
+
+            100% {
+
+                opacity: 1;
+
+                -webkit-transform: translateX(-200vw);
+
+            }
+
+        }
+
+        @-webkit-keyframes fadeInRightMain {
+
+            0% {
+
+                opacity: 1;
+
+                -webkit-transform: translateX(100vw);
+
+            }
+
+            50% {
+                opacity: 1;
+
+                -webkit-transform: translateX(0);
+            }
+
+            100% {
+
+                opacity: 1;
+
+                -webkit-transform: translateX(100vw);
+
+            }
+
+        }
+
+
+        #shiftway {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 100%; */
+            height: calc(100vh - 133.5px - 53px);
+
+        }
+
+        .ml10 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .ml10 .letter {
+            display: inline-block;
+            /* transform-origin: 0 0; */
+            color: #ffffff;
+            z-index: 999;
+            font-family: 'Roboto';
+            font-size: 6vw;
+        }
+
+        .ml10 .letters {
+            word-spacing: 15px;
+        }
+
+        .ml10 .line {
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            height: 100%;
+            width: 3px;
+            background-color: #fff;
+            transform-origin: 0 50%;
+        }
+
+        .ml10 .line1 {
+            top: 0;
+            left: 0;
+        }
+
+        .animated {
+            background-repeat: no-repeat;
+            background-position: left top;
+            -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        .animated-fade {
+            background-repeat: no-repeat;
+            background-position: left top;
+            -webkit-animation-duration: 1.7s;
+            animation-duration: 1.7s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        .fadeInRight {
+            -webkit-animation-name: fadeInRightMain;
+            animation-name: fadeInRightMain;
+            animation-delay: 1.2s;
+        }
+
+        .fadeInRight1 {
+            -webkit-animation-name: fadeInRightMain;
+            animation-name: fadeInRightMain;
+            animation-delay: 0.26s;
+            animation-duration: 3s;
+        }
+
+        .fadeInRight2 {
+            -webkit-animation-name: fadeInRightMain;
+            animation-name: fadeInRightMain;
+            animation-delay: 0.5s;
+            animation-duration: 3s;
+        }
+
+
+        .fx_background {
+            background: url(img/fx_background.jpg) center no-repeat fixed;
+            background-size: cover;
+            height: 100vh;
+            top: 0;
+            right: 0;
+            left: 0;
+            position: fixed;
+
+
+        }
+
+        .power {
+            color: #ffffff;
+            font-family: "RobotoBold" !important;
+            font-size: 4.5vw;
+        }
+
+        .hamburger {
+            top: 50%;
+            left: 10%;
+            width: 50px;
+            height: 6px;
+            background: #FCFCFC;
+            position: absolute;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+            transition: 0.5s;
+        }
+
+        .hamburger:before {
+            top: -16px;
+        }
+
+        .hamburger:after {
+            top: 16px;
+        }
+
+
+
+        /* Icon 1 */
+        .icon-one {
+            position: absolute;
+            /* top: 10%; */
+            right: 0;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hamburger-one:before,
+        .hamburger-one:after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 6px;
+            background: #FCFCFC;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: 0.5s;
+        }
+
+        .icon-one.active-one .hamburger-one {
+            background: rgba(0, 0, 0, 0);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+        }
+
+        .icon-one.active-one .hamburger-one:before {
+            top: 0;
+            transform: rotate(45deg);
+        }
+
+        .icon-one.active-one .hamburger-one:after {
+            top: 0;
+            transform: rotate(135deg);
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu_content {
+            background-color: rgba(0, 0, 0, .2);
+            width: 0;
+            /* position: fixed; */
+            /* z-index: 1;
+            right: 0;
+            left: 0; */
+            overflow: hidden;
+            transition: 0.5s;
+        }
+
+        .menu-items {
+            float: right;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+            height: 100%;
+            padding-right: 5vw;
+            z-index: 999;
+            /* animation: fadeleft 3s;
+            -moz-animation: fadeleft 3s;
+            -webkit-animation: fadeleft 3s;
+            -o-animation: faderleft 3s; */
+        }
+
+        .menu-items h1 {
+            color: #363636;
+            font-family: "RobotoThin";
+            font-size: 4vw;
+        }
+
+        .menu-items h1 span {
+            font-family: "RobotoBold";
+        }
+
+        .menu-items h1:hover {
+            cursor: pointer;
+            color: #ffffff;
+        }
+
+
+        .ml15 {
+            font-weight: 800;
+            font-size: 3.8em;
+            text-transform: uppercase;
+            letter-spacing: normal;
+        }
+
+        .ml15 .word {
+            display: inline-block;
+            line-height: 1em;
+            color: #fff;
+        }
+
+
+        .ml4 {
+            /* position: relative; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-weight: 900;
+            font-size: 15vw;
+            color: #fff;
+            text-align: center;
+        }
+
+        .ml4 .letters {
+            text-align: center;
+            position: absolute;
+            /* margin: auto;
+  left: 0;
+  top: 0;
+  right: 0; */
+            opacity: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="fx_background ">
+
+
+        <!-- nav-container start -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top extra-pad"
+            style="background-color: transparent !important; font-family: 'Roboto'; z-index:1 !important; ">
+            <div class="container" style="max-width: 1275px">
+                <a class="navbar-brand" href="index21.html">
+                    <!-- <img src="img/FX-ICON-BOX-WEB.png"
+                    style="width: 50px !important" width="50" height="50" /> -->
+                    <h1 class="power">the Power of ONE</h1>
+                </a>
+
+                <div class="icon-one">
+                    <div class="hamburger hamburger-one"></div>
+                </div>
+
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="inside-fx/index.html">INSIDE FX</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="a-vision/index.html">A VISION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="credentials/index.html">CREDENTIALS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="participate/index.html">PARTICIPATE</a>
+                    </li>
+                </ul>
+            </div> -->
+            </div>
+        </nav>
+
+
+        <div class="container-fluid rempad" style="margin-top: 8.4rem; padding: 0px;">
+
+
+            <div id="backgroundColor" class="row no-gutters rempad fadeInRight animated-fade" style="  position: absolute; z-index: 999;
+           /* top: 0;
+           bottom: 0; */
+           left: 0;
+           right: 0;
+           /* margin-top: -8.4rem !important; height:100vh !important; */
+           height: calc(100vh - 133.5px - 53px);
+
+           width: 100%;
+           opacity: 0;
+           transition: ease;
+           transition-delay: 17s;
+           overflow: hidden;
+           background-color: #000;
+           ">
+                <div class="row">
+                    <div class="col-1" style="padding:0px 5px !important;">
+                        <div style=" 
+                    
+                    width:15px !important ; animation-delay: 1.7s;  
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    max-width: 15px !important; background-color:darkblue;  height: 100%;">
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+            </div>
+            <div id="backgroundColor" class="row no-gutters rempad fadeInRight1 animated-fade" style=" position: absolute; z-index: 999;
+            /* top: 0;
+            bottom: 0; */
+            left: 0;
+            right: 0;
+            /* margin-top: -8.4rem !important; height:100vh !important; */
+            height: calc(100vh - 133.5px - 53px);
+
+            width: 100%;
+            opacity: 0;
+            transition: ease;
+            transition-delay: 20s;
+            overflow: hidden;
+            background-color: blue;
+            ">
+                <div class="row">
+
+
+                    <div class="col-1" style="padding:0px 5px !important;">
+                        <div style="   width:15px !important ; animation-duration: 1.8s;
+                 animation-delay: 1.9s;
+                 max-width: 15px!important; background-color: blue;  height: 100%;">
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+            </div>
+            <div id="backgroundColor" class="row no-gutters rempad fadeInRight2 animated-fade" style=" position: absolute; z-index: 999;
+             /* top: 0;
+             bottom: 0; */
+             left: 0;
+             right: 0;
+             /* margin-top: -8.4rem !important; height:100vh !important; */
+             height: calc(100vh - 133.5px - 53px);
+
+             width: 100%;
+             opacity: 0;
+             transition: ease;
+             transition-delay: 20s;
+             overflow: hidden;
+             background-color: pink;
+             ">
+                <div class="row">
+
+
+                    <div class="col-1" style="padding:0px 5px !important;">
+                        <div style="  width:35px !important ;  animation-duration: 1.4s;
+                  animation-delay: 2.3s;
+                  max-width: 35px !important; background-color:pink;  height: 100%;">
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+
+
+            <div id="content" class="row no-gutters rempad" style="display: none;">
+
+                <div class="col-lg-3 text-box1 rempad">
+                    <div class="box1">
+                        <span>We</span> merge <br />
+                        <span>business</span> <br />
+                        and market <br />
+                        <span>expertise</span> <br />
+                        into <span>4</span> clear <br />
+                        <span>ecosystems</span> <br />
+                        of branded <br />
+                        <span>ventures</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-9 rempad">
+                    <div class="row no-gutters" style="height: 50%;">
+                        <div class="col-lg-4 image-box2">
+                            <div class="box2">
+                                <div class="box2-text">
+                                    <span>Fi</span> <br />
+                                    nan <br />
+                                    <span>ce</span>
+                                </div>
+                            </div>
+                            <div class="box2-hover" style="display:none">
+                                <div class="hover-text2">
+                                    <div class="big-size">
+                                        <span>Fi</span>nan<span>ce</span>
+                                    </div>
+                                    <div class="small-size">
+                                        Providing <span>Solutions</span> <br />
+                                        for a <span>Worldwide Access</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 text-box3">
+                            <div class="box3">
+                                <div class="box3-text">
+                                    En<span>ter</span> <br />
+                                    tain <br />
+                                    <span>me</span>nt
+                                </div>
+                            </div>
+                            <div class="box3-hover" style="display:none">
+                                <div class="hover-text3">
+                                    <div class="big-size">
+                                        En<span>ter</span>tain<span>me</span>nt
+                                    </div>
+                                    <div class="small-size">
+                                        Merging <span>Sports,</span> Real <br />
+                                        <span>Estate,</span> and <span>Music</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 image-box4">
+                            <div class="box4">
+                                <div class="box4-text">
+                                    <span>C</span>re <br />
+                                    a<span>ti</span> <br />
+                                    <span>ve</span>
+                                </div>
+                            </div>
+                            <div class="box4-hover" style="display:none">
+                                <div class="hover-text4">
+                                    <div class="big-size">
+                                        <span>C</span>re<span>ative</span>
+                                    </div>
+                                    <div class="small-size">
+                                        Shaping <span>Ideas</span> <br />
+                                        <span>Beyond Marketing</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row no-gutters" style="height: 50%;">
+                        <div class="col-lg-4 text-box5">
+                            <div class="box5">
+                                <div class="box5-text">
+                                    <span>C</span>om <br />
+                                    m<span>uni</span> <br />
+                                    ty
+                                </div>
+                            </div>
+                            <div class="box5-hover" style="display:none">
+                                <div class="hover-text5">
+                                    <div class="big-size">
+                                        <span>C</span>omm<span>uni</span>ty
+                                    </div>
+                                    <div class="small-size">
+                                        Making An <span>Impact</span> towards <br />
+                                        An <span>Inclusive World</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 text-box6">
+                            <div class="box6">
+                                <div class="box6-text">
+                                    Generating a <span>portfolio</span> of <span>products and services,</span> aligned
+                                    with
+                                    <br />
+                                    all <span>governance</span> and corporate <span>guidelines</span> on a <span>global
+                                        scale.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menu_content rempad">
+                <div class="row rempad">
+                    <div class="col-6 menu-items" style="display: none;">
+                        <a href="inside-fx/index.html">
+                            <h1>Inside <span>FX</span></h1>
+                        </a>
+                        <a href="a-vision/index.html">
+                            <h1><span>A</span> Vision</h1>
+                        </a>
+                        <a href="credentials/index.html">
+                            <h1><span>Credentials</span></h1>
+                        </a>
+                        <a href="participate/index.html">
+                            <h1>Participate</h1>
+                        </a>
+                    </div>
+                    <div class="col-6">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- footer start -->
+        <footer class="footer bg-light fixed-bottom"
+            style="z-index:9999 !important; background-color: transparent !important; font-family: Roboto !important">
+
+            <div class="container-fluid text-left">
+
+                <span style="margin: 0; font-size: 12px; color: #838586; left: 3.7%; position: relative;">
+                    Copyright © 2005 - 2020 FX Holdings Ag and/or its affiliates. All
+                    Rights Reserved. An FX Registered
+                    Company.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="legal-information/index.html"
+                        style="color: #ffffff !important; font-family: RobotoBold !important ">Legal Information
+                    </a>
+                    <!-- <a href="#" style="color: #973637 !important; font-family: Roboto !important; float:right; font-size: 16px;
+        font-weight:bold; position:relative; right: 7%;">
+                    The Power of One</a> -->
+                </span>
+
+                <!-- <span style="margin: 0; font-size: 12px">
+        <a href="legal-information/index.html" style="color: #af1107 !important; font-family: Roboto !important; float:left;
+        position:relative; left: 12%;">
+          Legal
+          Information</a>
+        Copyright © 2005 - 2021 FX Holdings Ag and/or its affiliates. All
+        Rights Reserved. An FX Registered
+        Company. -->
+
+                <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+
+                <!-- <a href="#" style="color: #af1107 !important; font-family: Roboto !important; float:right;
+        position:relative; right: 12%;">
+          The Power of One</a>
+        </span>  -->
+
+            </div>
+
+        </footer>
+        <!-- footer end -->
+
+    </div>
+
+
+    <script>
+
+        $(function () {
+
+            $('.image-box2').hover(function () {
+
+                $('.box2-hover').css('display', 'flex');
+
+                $('.box2').css('display', 'none');
+
+            }, function () {
+
+                $('.box2-hover').css('display', 'none');
+
+                $('.box2').css('display', 'flex');
+
+            });
+
+
+
+            $('.text-box3').hover(function () {
+
+                $('.box3-hover').css('display', 'flex');
+
+                $('.box3').css('display', 'none');
+
+
+
+            }, function () {
+
+                $('.box3-hover').css('display', 'none');
+
+                $('.box3').css('display', 'flex');
+
+
+
+            });
+
+
+
+            $('.image-box4').hover(function () {
+
+                $('.box4-hover').css('display', 'flex');
+
+                $('.box4').css('display', 'none');
+
+            }, function () {
+
+                $('.box4-hover').css('display', 'none');
+
+                $('.box4').css('display', 'flex');
+
+            });
+
+
+
+            $('.text-box5').hover(function () {
+
+                $('.box5-hover').css('display', 'flex');
+
+                $('.box5').css('display', 'none');
+
+            }, function () {
+
+                $('.box5-hover').css('display', 'none');
+
+                $('.box5').css('display', 'flex');
+
+            });
+
+
+
+            $('#backgroundColor').show();
+
+
+        });
+
+
+        $(document).ready(function () {
+
+            // setTimeout(() => {
+
+
+
+            // }, 3700);
+
+            $('#content').css('display', 'flex');
+            $('#video').css('display', 'flex');
+
+
+
+            $('.icon-one').click(function () {
+                if ($(this).hasClass('active-one')) {
+                    $(".menu_content").css('width', '0');
+                    $("#content").css('display', 'flex');
+                    $('.icon-one').removeClass('active-one');
+                }
+                else {
+                    $('.icon-one').toggleClass('active-one');
+                    // $("#video").css('display', 'none');
+                    // $("#backgroundColor").css('display', 'none');
+                    $("#content").css('display', 'none');
+                    $(".menu_content").css('width', '100%');
+                }
+
+                const element = document.querySelector('.menu-items');
+                element.classList.add('animated', 'fadeInLeft');
+                setTimeout(function () {
+                    element.classList.remove('fadeInLeft');
+                }, 1500);
+
+            });
+
+
+
+            setTimeout(() => {
+
+                $('.menu-items').css('display', 'flex');
+
+            }, 1000);
+
+        });
+
+    </script>
+
+    <script>
+
+        $(document).ready(function () {
+            if (sessionStorage.getItem("pageloadcount")) {
+                $("#video").css('display', 'none');
+                $("#letters").css('display', 'none');
+                $("#shiftway").css('display', 'none');
+                $("#backgroundColor").css('display', 'none');
+                $("#content").show();
+                $("#content").css("animation", "none");
+                $("#content").css("-moz-animation", "none");
+                $("#content").css("-webkit-animation", "none");
+                $("#content").css("-o-animation", "none");
+            }
+            sessionStorage.setItem("pageloadcount", "1");
+        });
+
+
+
+        $(window).unload(function () {
+            $window.sessionStorage.clear();
+        });
+
+    </script>
+
+
+    <script>
+        var textWrapper = document.querySelector('.ml10 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({ loop: false })
+            .add({
+                targets: '.ml10 .letter',
+                opacity: [0, 1],
+                easing: "easeOutExpo",
+                duration: 600,
+                offset: '-=75',
+                delay: (el, i) => 140 * (i + 1)
+            }).add({
+                targets: '.ml10',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+    </script>
+    <script>
+        anime.timeline({ loop: true })
+            .add({
+                targets: '.ml15 .word',
+                scale: [2, 1],
+                opacity: [0, 1],
+                easing: "easeOutCirc",
+                duration: 800,
+                delay: (el, i) => 800 * i
+            }).add({
+                targets: '.ml15',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+    </script>
+    <script>
+        var ml4 = {};
+        ml4.opacityIn = [0, 1];
+        ml4.scaleIn = [0.2, 1];
+        ml4.scaleOut = 3;
+        ml4.durationIn = 300;
+        ml4.durationOut = 300;
+        ml4.delay = 200;
+
+        anime.timeline({ loop: true })
+            .add({
+                targets: '.ml4 .letters-6',
+                scale: [3, 1],
+                opacity: [0, 1],
+                easing: "easeOutCirc",
+                duration: 200
+            }).add({
+                targets: '.ml4 .letters-6',
+                opacity: 0,
+                duration: 200,
+                easing: "easeOutExpo",
+                delay: 200
+            }).add({
+                targets: '.ml4 .letters-1',
+                scale: [3, 1],
+                opacity: [0, 1],
+                easing: "easeOutCirc",
+                duration: 300
+            }).add({
+                targets: '.ml4 .letters-1',
+                opacity: 0,
+                duration: 300,
+                easing: "easeOutExpo",
+                delay: 200
+            }).add({
+                targets: '.ml4 .letters-2',
+                scale: [3, 1],
+                opacity: [0, 1],
+                easing: "easeOutCirc",
+                duration: 300
+            }).add({
+                targets: '.ml4 .letters-2',
+                opacity: 0,
+                duration: 300,
+                easing: "easeOutExpo",
+                delay: 200
+            }).add({
+                targets: '.ml4 .letters-3',
+                scale: [3, 1],
+                opacity: [0, 1],
+                easing: "easeOutCirc",
+                duration: 300
+            }).add({
+                targets: '.ml4 .letters-3',
+                opacity: 0,
+                duration: 300,
+                easing: "easeOutExpo",
+                delay: 200
+            }).add({
+                targets: '.ml4 .letters-4',
+                scale: [3, 1],
+                opacity: [0, 1],
+                easing: "easeOutCirc",
+                duration: 300
+            }).add({
+                targets: '.ml4 .letters-4',
+                opacity: 0,
+                duration: 300,
+                easing: "easeOutExpo",
+                delay: 200
+            }).add({
+                targets: '.ml4 .letters-5',
+                scale: [3, 1],
+                opacity: [0, 1],
+                easing: "easeOutCirc",
+                duration: 300
+            }).add({
+                targets: '.ml4 .letters-5',
+                opacity: 0,
+                duration: 300,
+                easing: "easeOutExpo",
+                delay: 200
+            }).add({
+                targets: '.ml4',
+                opacity: 0,
+                duration: 300,
+                delay: 200
+            });
+    </script>
+
+
+
+</body>
+
+</html>

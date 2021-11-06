@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Partners</title>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7COswald:300,400,500,600,700"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <link rel="icon" href="../wp-content/uploads/2019/09/cropped-FX-ICON-BOX-WEB-32x32.png" sizes="32x32" />
+    <link rel="icon" href="../wp-content/uploads/2019/09/cropped-FX-ICON-BOX-WEB-192x192.png" sizes="192x192" />
+    <link rel="stylesheet" id="buran-fonts-css"
+        href="https://fonts.googleapis.com/css?family=Roboto%3A400%2C700%2C900%2C400italic%2C700italic%2C900italic%7CDosis%3A200%2C300%2C400%2C500%2C600%2C700%2C800%26amp%3Bsubset%3Dlatin-ext&amp;subset=latin%2Clatin-ext"
+        type="text/css" media="all" />
+    <!-- styles -->
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../assets/js/jquery.hoverIntent.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+        </script>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #000000;
+        }
+
+        @font-face {
+            font-family: "Amplitude-Black";
+            font-style: normal;
+            font-display: block;
+            src: url(Amplitude-Black_3531.ttf);
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: black;
+            font-family: "Roboto";
+        }
+
+        .fixed-bottom {
+            position: fixed !important;
+            right: 0;
+            bottom: 0 !important;
+            left: 0;
+            z-index: 1030 !important;
+        }
+
+
+        @font-face {
+            font-family: "RobotoLight";
+            font-display: block;
+            src: url("../wp-content/fonts/roboto/Roboto-Light.ttf");
+        }
+
+        @font-face {
+            font-family: "RobotoThin";
+            font-display: block;
+            src: url("../wp-content/fonts/roboto/Roboto-Thin.ttf");
+        }
+
+        @font-face {
+            font-family: "RobotoBold";
+            font-display: block;
+            src: url("../wp-content/fonts/roboto/Roboto-Bold.ttf");
+        }
+
+
+        .rempad {
+            height: -moz-calc(100vh - 133.5px - 53px);
+            /* Firefox */
+            height: -webkit-calc(100vh - 133.5px - 53px);
+            /* Chrome, Safari */
+            height: calc(100vh - 133.5px - 53px);
+        }
+    </style>
+    <style>
+        .navbar {
+            padding: 2.3rem 0rem;
+            height: 133.5px;
+        }
+
+        footer {
+            height: 53px;
+        }
+
+        .active {
+            color: #973637 !important;
+            background: #fff !important;
+            font-weight: bold !important;
+        }
+
+        @media screen and (max-width: 900px) {
+            body {
+                overflow: auto !important;
+            }
+        }
+
+        @media screen and (min-width:1399px) and (max-width:1499px) {
+            .navbar .container {
+                max-width: 1350px !important;
+            }
+        }
+
+        @media screen and (min-width:1801px) and (max-width:2300px) {
+            .navbar .container {
+                max-width: 1810px !important;
+            }
+        }
+
+        @media screen and (min-width:2301px) and (max-width:3300px) {
+            .navbar .container {
+                max-width: 2410px !important;
+            }
+        }
+
+        @media screen and (min-width: 2800px) and (max-width: 3000px) {
+            .power {
+                position: relative;
+                right: 5.5vw;
+            }
+            .icon-one {
+                right: -5vw !important;
+            }
+        }
+
+        @media screen and (min-width: 5000px)  {
+            .power {
+                position: relative;
+                right: 11.5vw;
+            }
+            .icon-one {
+                right: -10vw !important;
+            }
+        }
+
+        @media screen and (min-width:3301px) {
+            .navbar .container {
+                max-width: 3600px !important;
+            }
+
+            .power {
+                font-size: 2.5vw !important;
+            }
+        }
+    </style>
+    <style>
+        /* .video-box {
+            background-image: url(../wp-content/uploads/partnersvideo.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100%;
+            width: 100%;
+        } */
+
+        .text-box h1 {
+            font-family: "RobotoThin";
+            font-size: 7vw;
+            font-weight: 500;
+            line-height: 0.8;
+            color: #f5f5f5;
+            padding-left: 6vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: baseline;
+            height: 100%;
+            padding-bottom: 35vh;
+        }
+
+        .text-box h1 span {
+            font-family: "RobotoBold";
+        }
+
+        .form-control {
+            height: 4.5vh;
+            border-radius: 0px;
+            border: none;
+            background-color: #6779be !important;
+            /* opacity: 0.8; */
+            color: #f5f5f5 !important;
+            font-family: "RobotoLight" !important;
+            font-size: 0.9vw !important;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+
+        .col-form-label {
+            font-family: "RobotoLight";
+            font-size: 0.9vw;
+            color: #f5f5f5;
+            left: 2.5vw;
+        }
+
+        .btn-light {
+            background-color: transparent;
+            color: #f5f5f5;
+            border: 1px solid #5c5959;
+            border-radius: 0%;
+            padding: 0.6vh 2.8vw;
+            font-family: "RobotoLight";
+            font-size: 1vw;
+            margin-top: 0.5vh;
+        }
+
+        .form-group {
+            margin-bottom: 0.8vh !important;
+        }
+
+        .messagearea {
+            margin-top: 1vh;
+        }
+
+        textarea {
+            resize: none;
+            height: 14vh !important;
+        }
+
+        .form-cont {
+            padding: 0 3vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            padding-bottom: 6vh;
+            margin-right: 3vw;
+        }
+
+        .form-cont h1 {
+            color: #f5f5f5;
+            font-size: 3.2vw;
+            font-family: "RobotoThin";
+            font-weight: 500;
+            line-height: 1;
+            padding-left: 6.5vw;
+            padding-bottom: 3vh;
+        }
+
+        .form-cont h1 span {
+            font-family: "RobotoBold";
+        }
+    </style>
+    <style>
+        /*  =========="slide-1"================  */
+        .pattner-slide1 {
+            float: right;
+            padding: 0 6vw;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .sec-col-txt p {
+            line-height: 1.2;
+            color: #fff;
+            margin: 3.5vh 0 0 0;
+            font-size: 1.45vw;
+            font-family: "RobotoThin", sans-serif;
+        }
+
+        .sec-col-txt p b {
+            font-family: "RobotoBold", sans-serif;
+        }
+
+        .first-col-txt p {
+            color: #fff;
+            line-height: 0.78;
+            margin: 10px 0 0 0;
+        }
+
+        .creating-head {
+            margin: 0;
+            font-family: "RobotoBold", sans-serif;
+            font-size: 6.6vw;
+
+        }
+
+        .deliver-txt {
+            font-size: 6.6vw;
+            font-family: 'RobotoThin';
+
+        }
+
+        /* .bg-img {
+            background-image: url("../wp-content/uploads/partnerbg.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+
+        } */
+
+        .culture-txt {
+            font-size: 3.07vw !important;
+        }
+
+        /* ================="Slide-2"================ */
+
+        .pattner-slide2 {
+            float: right;
+            padding: 0 7vw;
+            /* text-align: right; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .first-col-txt-2 {
+            position: relative;
+            right: 0.7vw;
+        }
+
+        .deliver-txt-2 {
+
+            font-size: 6.6vw;
+            font-family: 'RobotoThin';
+
+        }
+
+        .first-col-txt-2 p {
+            color: #fff;
+            line-height: 0.78;
+            margin: 10px 0 0 0;
+        }
+
+
+        /* .bg-img-s2 {
+            background-image: url("../wp-content/uploads/partners-slide2bg.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+
+        } */
+
+        .power-tooltxt {
+            margin: 1.5vh 0 7vh 0 !important;
+            line-height: 1 !important;
+            font-size: 3.1vw !important;
+        }
+
+        .animation-arrow {
+            font-family: "RobotoBold" !important;
+        }
+
+        .labelcol {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+    </style>
+    <style>
+        .pattner-slide2,
+        .form-cont {
+            -webkit-animation-name: fadeInRight;
+            animation-name: fadeInRight;
+            -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        @-webkit-keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateX(50px);
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translate(0);
+            }
+        }
+
+        .first-slide video,
+        .second-slide video,
+        .third-slide video {
+            min-width: 100%;
+            min-height: 100%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .fx_background {
+            background: url(../img/fx_background.jpg) center no-repeat fixed;
+            background-size: cover;
+            height: 100vh;
+            top: 0;
+            right: 0;
+            left: 0;
+            position: fixed;
+        }
+
+        .power {
+            color: #ffffff;
+            font-family: "RobotoBold" !important;
+            font-size: 4.5vw;
+        }
+
+        .hamburger {
+            top: 50%;
+            left: 10%;
+            width: 50px;
+            height: 6px;
+            background: #FCFCFC;
+            position: absolute;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+            transition: 0.5s;
+        }
+
+        .hamburger:before {
+            top: -16px;
+        }
+
+        .hamburger:after {
+            top: 16px;
+        }
+
+
+
+        /* Icon 1 */
+        .icon-one {
+            position: absolute;
+            /* top: 10%; */
+            right: 0;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hamburger-one:before,
+        .hamburger-one:after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 6px;
+            background: #FCFCFC;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: 0.5s;
+        }
+
+        .icon-one.active-one .hamburger-one {
+            background: rgba(0, 0, 0, 0);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+        }
+
+        .icon-one.active-one .hamburger-one:before {
+            top: 0;
+            transform: rotate(45deg);
+        }
+
+        .icon-one.active-one .hamburger-one:after {
+            top: 0;
+            transform: rotate(135deg);
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu_content {
+            background-color: rgba(0, 0, 0, .2);
+            width: 0;
+            /* position: fixed; */
+            /* z-index: 1;
+            right: 0;
+            left: 0; */
+            overflow: hidden;
+            transition: 0.5s;
+        }
+
+        .menu-items {
+            float: right;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+            height: 100%;
+            padding-right: 5vw;
+            /* animation: fadeleft 3s;
+            -moz-animation: fadeleft 3s;
+            -webkit-animation: fadeleft 3s;
+            -o-animation: faderleft 3s; */
+        }
+
+        .menu-items h1 {
+            color: #363636;
+            font-family: "RobotoThin";
+            font-size: 4vw;
+        }
+
+        .menu-items h1 span {
+            font-family: "RobotoBold";
+        }
+
+        .menu-items h1:hover {
+            cursor: pointer;
+            color: #ffffff;
+        }
+        .animated {
+            background-repeat: no-repeat;
+            background-position: left top;
+            -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+        @-webkit-keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateX(-30px);
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- nav-container start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top extra-pad"
+            style="background-color: #000000 !important; font-family: 'Roboto'">
+            <div class="container" style="max-width: 1275px">
+                <a class="navbar-brand" href="../index21.html">
+                    <!-- <img src="img/FX-ICON-BOX-WEB.png"
+                    style="width: 50px !important" width="50" height="50" /> -->
+                    <h1 class="power">the Power of ONE</h1>
+                </a>
+
+                <div class="icon-one">
+                    <div class="hamburger hamburger-one"></div>
+                </div>
+
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="inside-fx/index.html">INSIDE FX</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="a-vision/index.html">A VISION</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="credentials/index.html">CREDENTIALS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="participate/index.html">PARTICIPATE</a>
+                </li>
+            </ul>
+        </div> -->
+            </div>
+    </nav>
+
+
+    <div class="container-fluid rempad" style="margin-top: 8.4rem; padding: 0px;">
+        <div class="row no-gutters rempad part-row">
+
+            <div class="col-12 bg-img first-slide rempad">
+                <video loop="" autoplay="true" muted="" playsinline="">
+                    <source src="../wp-content/uploads/Bag Blue.m4v" type="video/mp4">
+                </video>
+                <div class="video-content">
+                    <div class="pattner-slide1">
+
+
+                        <div class="first-col-txt">
+                            <p class="deliver-txt">
+                                <span class="creating-head">Resource</span> <br>
+                                Oriented
+                            </p>
+                        </div>
+
+
+
+                        <div class="sec-col-txt">
+
+
+                            <p class="culture-txt">
+                                <b> A Culture</b> of Diversity
+                            </p>
+                            <p>
+                                A strong dedication to making a <b>social impact</b> is <br>
+                                the <b>core strength</b> of our <b>partnership leverage</b>.
+
+
+                            </p>
+                            <p>
+                                We strive for <b>novelty</b> and <b>variety</b> of new <br>
+                                business <b>solutions</b> for <b>borderless</b> activities.
+                            </p>
+
+                            <p>
+                                <b>
+                                    Discover #Whatlf
+                                </b> <span id="arrow">></span>
+                            </p>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 bg-img-s2 second-slide rempad" style="display: none;">
+                <video loop="" autoplay="true" muted="" playsinline="">
+                    <source src="../wp-content/uploads/Bagpurple.m4v" type="video/mp4">
+                </video>
+                <div class="video-content">
+                    <div class="pattner-slide2">
+
+
+                        <div class="first-col-txt-2">
+                            <p class="deliver-txt-2">
+                                <span class="creating-head">Team</span>Work
+                            </p>
+                        </div>
+
+
+
+                        <div class="sec-col-txt">
+
+
+                            <p class="power-tooltxt">
+                                <b>A Powerful</b> Tool <br>
+                                Beyond Advice
+                            </p>
+                            <p>
+                                Our <b>collaborations</b> are designed to become a <br>
+                                <b>combined</b> true effort as we anticipate, <b>innovate</b>,<br>
+                                and define all aspects of <b>business exchange</b>.
+
+
+
+                            </p>
+                            <p>
+                                We <b>invite you</b> to <b>partner</b> with <b>FX</b> to introduce <br>
+                                new <b>conceptual ventures</b>. Don’t wait to engage <span
+                                    class="animation-arrow">></span>
+                            </p>
+
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 third-slide rempad" style="display: none;">
+                <video loop="" autoplay="true" muted="" playsinline="">
+                    <source src="../wp-content/uploads/Bagpurple.m4v" type="video/mp4">
+                </video>
+                <div class="video-content">
+                    <div class="row rempad">
+                        <div class="col-lg-6 col-md-12 col-sm-12 text-box">
+                            <h1>
+                                Stay in <br />
+                                <span>Touch</span>
+                            </h1>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 form-box">
+                            <div class="form-cont">
+                                <h1>
+                                    <span>Reach Out</span> <br />
+                                    to partner with us
+                                </h1>
+                                <form class="form-ct">
+                                    <div class="form-group row">
+                                        <label for="inputEmail3" class="col-sm-2 col-form-label labelcol">Name</label>
+                                        <div class="col-sm-10 in-put">
+                                            <input type="email" class="form-control" id="inputEmail3">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputPassword3"
+                                            class="col-sm-2 col-form-label labelcol">Email</label>
+                                        <div class="col-sm-10 in-put">
+                                            <input type="email" class="form-control" id="inputPassword3">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputPassword3"
+                                            class="col-sm-2 col-form-label labelcol">Country</label>
+                                        <div class="col-sm-10 in-put ">
+                                            <!-- <input type="Country" class="form-control" id="inputPassword3"> -->
+                                            <select class="form-control">
+                                                <option>Select Country</option>
+                                                <option>America</option>
+                                                <option>Australia</option>
+                                                <option>France</option>
+                                                <option>Pakistan</option>
+                                                <option>Switzerland</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row messagearea">
+                                        <label for="inputPassword3" class="col-sm-2 col-form-label">Message</label>
+                                        <div class="col-sm-10 in-put">
+                                            <textarea class="form-control text-areaaa" type="textarea" id="message"
+                                                maxlength="140" rows="7"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-sm-8">
+
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <button type="submit" class="btn btn-light">send</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu_content rempad">
+            <div class="row rempad">
+                <div class="col-6 menu-items" style="display: none;">
+                    <a href="../inside-fx/index.html">
+                        <h1>Inside <span>FX</span></h1>
+                    </a>
+                    <a href="../a-vision/index.html">
+                        <h1><span>A</span> Vision</h1>
+                    </a>
+                    <a href="../credentials/index.html">
+                        <h1><span>Credentials</span></h1>
+                    </a>
+                    <a href="../participate/index.html">
+                        <h1>Participate</h1>
+                    </a>
+                </div>
+                <div class="col-6">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- footer start -->
+    <footer class="footer bg-light fixed-bottom"
+            style="background-color: #000000 !important; font-family: Roboto !important">
+
+            <div class="container-fluid text-left">
+
+                <span style="margin: 0; font-size: 12px; color: #838586; left: 3.7%; position: relative;">
+                    Copyright © 2005 - 2020 FX Holdings Ag and/or its affiliates. All
+                    Rights Reserved. An FX Registered
+                    Company.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="legal-information/index.html"
+                        style="color: #ffffff !important; font-family: RobotoBold !important ">Legal Information
+                    </a>
+                    <!-- <a href="#" style="color: #973637 !important; font-family: Roboto !important; float:right; font-size: 16px;
+        font-weight:bold; position:relative; right: 7%;">
+                    The Power of One</a> -->
+                </span>
+
+                <!-- <span style="margin: 0; font-size: 12px">
+        <a href="legal-information/index.html" style="color: #af1107 !important; font-family: Roboto !important; float:left;
+        position:relative; left: 12%;">
+          Legal
+          Information</a>
+        Copyright © 2005 - 2021 FX Holdings Ag and/or its affiliates. All
+        Rights Reserved. An FX Registered
+        Company. -->
+
+                <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+
+                <!-- <a href="#" style="color: #af1107 !important; font-family: Roboto !important; float:right;
+        position:relative; right: 12%;">
+          The Power of One</a>
+        </span>  -->
+
+            </div>
+
+    </footer>
+    <!-- footer end -->
+
+
+
+
+
+
+
+    <script>
+        $('#arrow').hover(function () {
+            $('#arrow').css('cursor', 'pointer');
+        });
+
+        $('.animation-arrow').hover(function () {
+            $('.animation-arrow').css('cursor', 'pointer');
+        });
+
+        $(function () {
+            $('#arrow').click(function () {
+                $('.first-slide').css('display', 'none');
+                $('.second-slide').css('display', 'block');
+            });
+
+            $('.animation-arrow').click(function () {
+                $('.first-slide').css('display', 'none');
+                $('.second-slide').css('display', 'none');
+                $('.third-slide').css('display', 'block');
+            });
+        });
+
+        $(document).ready(function () {
+            $('.icon-one').click(function () {
+                if ($(this).hasClass('active-one')) {
+                    $(".menu_content").css('width', '0');
+                    $(".part-row").css('display', 'flex');
+                    $('.icon-one').removeClass('active-one');
+                }
+                else {
+                    $('.icon-one').toggleClass('active-one');
+                    // $("#video").css('display', 'none');
+                    // $("#backgroundColor").css('display', 'none');
+                    $(".part-row").css('display', 'none');
+                    $(".menu_content").css('width', '100%');
+                }
+
+                const element = document.querySelector('.menu-items');
+                element.classList.add('animated', 'fadeInLeft');
+                setTimeout(function () {
+                    element.classList.remove('fadeInLeft');
+                }, 1500);
+
+            });
+
+
+
+            setTimeout(() => {
+
+                $('.menu-items').css('display', 'flex');
+
+            }, 1000);
+
+        });
+
+    </script>
+
+
+
+
+</body>
+
+</html>

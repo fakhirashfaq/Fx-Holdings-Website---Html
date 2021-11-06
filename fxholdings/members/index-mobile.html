@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Members</title>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7COswald:300,400,500,600,700"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <link rel="icon" href="../wp-content/uploads/2019/09/cropped-FX-ICON-BOX-WEB-32x32.png" sizes="32x32" />
+    <link rel="icon" href="../wp-content/uploads/2019/09/cropped-FX-ICON-BOX-WEB-192x192.png" sizes="192x192" />
+    <link rel="stylesheet" id="buran-fonts-css"
+        href="https://fonts.googleapis.com/css?family=Roboto%3A400%2C700%2C900%2C400italic%2C700italic%2C900italic%7CDosis%3A200%2C300%2C400%2C500%2C600%2C700%2C800%26amp%3Bsubset%3Dlatin-ext&amp;subset=latin%2Clatin-ext"
+        type="text/css" media="all" />
+    <!-- styles -->
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../assets/js/jquery.hoverIntent.min.js"></script>
+    <!-- <script src="../assets/js/plugins.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/typewriter.js"></script> -->
+    <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #000000;
+        }
+
+        @font-face {
+            font-family: "Amplitude-Black";
+            font-style: normal;
+            font-display: block;
+            src: url(Amplitude-Black_3531.ttf);
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: black;
+            font-family: "Roboto";
+        }
+
+        .fixed-bottom {
+            position: fixed !important;
+            right: 0;
+            bottom: 0 !important;
+            left: 0;
+            z-index: 1030 !important;
+        }
+
+        @font-face {
+            font-family: "RobotoLight";
+            font-display: block;
+            src: url("../wp-content/fonts/roboto/Roboto-Light.ttf");
+        }
+
+        @font-face {
+            font-family: "RobotoThin";
+            font-display: block;
+            src: url("../wp-content/fonts/roboto/Roboto-Thin.ttf");
+        }
+
+        @font-face {
+            font-family: "RobotoBold";
+            font-display: block;
+            src: url("../wp-content/fonts/roboto/Roboto-Bold.ttf");
+        }
+
+
+        .rempad {
+            height: -moz-calc(100vh - 133.5px - 53px);
+            /* Firefox */
+            height: -webkit-calc(100vh - 133.5px - 53px);
+            /* Chrome, Safari */
+            height: calc(100vh - 133.5px - 53px);
+        }
+    </style>
+    <style>
+        .navbar {
+            padding: 2.3rem 0rem;
+            height: 133.5px;
+        }
+
+        footer {
+            height: 53px;
+        }
+
+        .active {
+            color: #973637 !important;
+            background: #fff !important;
+            font-weight: bold !important;
+        }
+
+        @media screen and (max-width: 768px) {
+            .power {
+                font-size: 7vw !important;
+            }
+
+            .hamburger {
+                left: 45% !important;
+            }
+
+            .content-cont {
+                overflow: auto !important;
+            }
+
+            .box1 h1,
+            .box1-hover h1 {
+                font-size: 15vw !important;
+            }
+
+            .typing-text p,
+            .typing-text-hover p {
+                font-size: 8.5vw !important;
+            }
+
+            .box2 p,
+            .box2 h1 {
+                font-size: 7vw !important;
+            }
+
+            .box2-hover h1 {
+                font-size: 6vw !important;
+            }
+
+            label,
+            .form-control,
+            .btn-light {
+                font-size: 3.5vw !important;
+            }
+
+            .form-box {
+                padding: 0 2vw !important;
+            }
+
+            .footer {
+                padding: 5px 0 0 0;
+            }
+
+            .text-left span {
+                font-size: 10px !important;
+            }
+
+            .menu-items h1 {
+                font-size: 8vw !important;
+            }
+        }
+
+            @media screen and (max-width: 900px) {
+                body {
+                    overflow: auto !important;
+                }
+            }
+
+            @media screen and (min-width:1399px) and (max-width:1499px) {
+                .navbar .container {
+                    max-width: 1350px !important;
+                }
+            }
+
+            @media screen and (min-width:1801px) and (max-width:2300px) {
+                .navbar .container {
+                    max-width: 1810px !important;
+                }
+            }
+
+            @media screen and (min-width:2301px) and (max-width:3300px) {
+                .navbar .container {
+                    max-width: 2410px !important;
+                }
+            }
+
+            @media screen and (min-width: 2800px) and (max-width: 3000px) {
+                .power {
+                    position: relative;
+                    right: 5.5vw;
+                }
+
+                .icon-one {
+                    right: -5vw !important;
+                }
+            }
+
+            @media screen and (min-width: 5000px) {
+                .power {
+                    position: relative;
+                    right: 11.5vw;
+                }
+
+                .icon-one {
+                    right: -10vw !important;
+                }
+            }
+
+            @media screen and (min-width:3301px) {
+                .navbar .container {
+                    max-width: 3600px !important;
+                }
+
+                #join {
+                    padding-top: 4vh;
+                }
+
+                .power {
+                    font-size: 2.5vw !important;
+                }
+            }
+    </style>
+    <style>
+        /* .video-box {
+            background-image: url(../wp-content/uploads/membersvideo.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .video-box-hover {
+            background-image: url(../wp-content/uploads/membersredvideo.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100%;
+            width: 100%;
+            -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        } */
+
+        .video-box video,
+        .video-box-hover video {
+            min-width: 100%;
+            min-height: 100%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+
+        .box1 {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding: 0vh 5vw;
+        }
+
+        .box1 h1 {
+            color: #f5f5f5;
+            font-family: "RobotoThin" !important;
+            line-height: 0.8;
+            font-size: 7vw;
+            font-weight: 500;
+        }
+
+        .box1 span {
+            font-family: "RobotoBold" !important;
+        }
+
+        .typing-text {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding: 0vh 5.5vw;
+        }
+
+        .typing-text p {
+            color: #e37384;
+            font-size: 3.4vw;
+            font-family: "RobotoThin";
+            padding-bottom: 18vh;
+        }
+
+        .Typewriter__cursor {
+            background: #e37384 !important;
+        }
+
+        .box1-hover {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding: 0vh 5vw;
+        }
+
+        .box1-hover h1 {
+            color: #f5f5f5;
+            font-family: "RobotoThin" !important;
+            line-height: 0.8;
+            font-size: 7vw;
+            font-weight: 500;
+        }
+
+        .box1-hover span {
+            font-family: "RobotoBold" !important;
+        }
+
+        .typing-text-hover {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding: 0vh 5.5vw;
+        }
+
+        .typing-text-hover p {
+            color: #e37384;
+            font-size: 3.4vw;
+            font-family: "RobotoThin";
+            padding-bottom: 18vh;
+        }
+
+        .text-box {
+            background-color: #e37384;
+        }
+
+        .form-box {
+            background-color: #252525;
+        }
+
+        .box2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: baseline;
+            height: 100%;
+            padding-left: 2vw;
+            padding-bottom: 9vh;
+            background-color: #e37384;
+        }
+
+        .box2 p,
+        .box2 h1 {
+            color: #f5f5f5;
+            font-family: "RobotoThin";
+            font-weight: 500;
+        }
+
+        .box2 p span,
+        .box2 h1 span {
+            font-family: "RobotoBold";
+        }
+
+        .box2 p {
+            font-size: 1.5vw;
+            line-height: 1.3;
+        }
+
+        .box2 h1 {
+            font-size: 3.2vw;
+            line-height: 1;
+            padding-left: 0.3vw;
+            padding-top: 11vh;
+        }
+
+        #join {
+            padding-top: 1vh;
+        }
+
+        .box2-hover {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: baseline;
+            height: 100%;
+            padding: 0 4.8vw;
+            padding-left: 2vw;
+            padding-bottom: 15vh;
+            -webkit-animation-name: fadeInRight;
+            animation-name: fadeInRight;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        .box2-hover p,
+        .box2-hover h1 {
+            color: #f5f5f5;
+            font-family: "RobotoThin";
+            font-weight: 500;
+        }
+
+        .box2-hover p span,
+        .box2-hover h1 span {
+            font-family: "RobotoBold";
+        }
+
+        .box2-hover p {
+            font-size: 1.5vw;
+            line-height: 1.3;
+        }
+
+        .box2-hover h1 {
+            font-size: 3.4vw;
+            padding-top: 6vh;
+        }
+
+        label {
+            color: #f5f5f5;
+            font-family: "RobotoLight" !important;
+            font-size: 0.9vw;
+        }
+
+        .form-control {
+            border-radius: 0%;
+            height: 5vh;
+            background-color: #e37384 !important;
+            border: 1px solid #252525 !important;
+            color: #f5f5f5 !important;
+            font-family: "RobotoLight" !important;
+            font-size: 0.9vw;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+
+        .input-col {
+            padding-left: 1.5vw;
+        }
+
+        /* .col-sm-10 input {
+            padding: 2vh 0 !important;
+        } */
+
+        .form-group {
+            margin-bottom: 1vh !important;
+        }
+
+        .btn-light {
+            border: 1px solid #5c5959;
+            background-color: #252525;
+            border-radius: 0%;
+            color: #e37384;
+            padding: 0.7vh 3.2vw;
+            font-family: "RobotoLight" !important;
+            font-size: 1vw;
+            position: relative;
+            top: 0;
+            right: 0.8vw;
+        }
+
+        form {
+            width: 100% !important;
+        }
+
+        .box2-hover h1 {
+            color: #f5f5f5;
+            font-size: 3vw;
+            font-family: "RobotoThin";
+            font-weight: 500;
+            line-height: 1.1;
+            padding-left: 1.2vw;
+            padding-bottom: 3vh;
+        }
+
+        .box2-hover h1 span {
+            font-family: "RobotoBold";
+        }
+
+        textarea {
+            resize: none;
+            height: 13vh !important;
+        }
+
+
+        @-webkit-keyframes fadeIn {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateZ(100px);
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: translateZ(0px);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateZ(100px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateZ(0px);
+            }
+        }
+
+        @-webkit-keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateX(50px);
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translate(0);
+            }
+        }
+
+        .labelcol {
+            display: flex;
+            justify-content: start;
+            align-items: center
+        }
+
+        .form-control {
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+
+        .fx_background {
+            background: url(../img/fx_background.jpg) center no-repeat fixed;
+            background-size: cover;
+            height: 100vh;
+            top: 0;
+            right: 0;
+            left: 0;
+            position: fixed;
+        }
+
+        .power {
+            color: #ffffff;
+            font-family: "RobotoBold" !important;
+            font-size: 4.5vw;
+        }
+
+        .hamburger {
+            top: 50%;
+            left: 10%;
+            width: 50px;
+            height: 6px;
+            background: #FCFCFC;
+            position: absolute;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+            transition: 0.5s;
+        }
+
+        .hamburger:before {
+            top: -16px;
+        }
+
+        .hamburger:after {
+            top: 16px;
+        }
+
+
+
+        /* Icon 1 */
+        .icon-one {
+            position: absolute;
+            /* top: 10%; */
+            right: 0;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hamburger-one:before,
+        .hamburger-one:after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 6px;
+            background: #FCFCFC;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: 0.5s;
+        }
+
+        .icon-one.active-one .hamburger-one {
+            background: rgba(0, 0, 0, 0);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+        }
+
+        .icon-one.active-one .hamburger-one:before {
+            top: 0;
+            transform: rotate(45deg);
+        }
+
+        .icon-one.active-one .hamburger-one:after {
+            top: 0;
+            transform: rotate(135deg);
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu_content {
+            background-color: rgba(0, 0, 0, .2);
+            width: 0;
+            /* position: fixed; */
+            /* z-index: 1;
+            right: 0;
+            left: 0; */
+            overflow: hidden;
+            transition: 0.5s;
+        }
+
+        .menu-items {
+            float: right;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+            height: 100%;
+            padding-right: 5vw;
+            /* animation: fadeleft 3s;
+            -moz-animation: fadeleft 3s;
+            -webkit-animation: fadeleft 3s;
+            -o-animation: faderleft 3s; */
+        }
+
+        .menu-items h1 {
+            color: #363636;
+            font-family: "RobotoThin";
+            font-size: 4vw;
+        }
+
+        .menu-items h1 span {
+            font-family: "RobotoBold";
+        }
+
+        .menu-items h1:hover {
+            cursor: pointer;
+            color: #ffffff;
+        }
+
+        .animated {
+            background-repeat: no-repeat;
+            background-position: left top;
+            -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        @-webkit-keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateX(-30px);
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="fx_background">
+
+        <!-- nav-container start -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top extra-pad"
+            style="background-color: transparent !important; font-family: 'Roboto'">
+            <div class="container" style="max-width: 1275px">
+                <a class="navbar-brand" href="../index21.html">
+                    <!-- <img src="img/FX-ICON-BOX-WEB.png"
+                    style="width: 50px !important" width="50" height="50" /> -->
+                    <h1 class="power">the Power of ONE</h1>
+                </a>
+
+                <div class="icon-one">
+                    <div class="hamburger hamburger-one"></div>
+                </div>
+
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="inside-fx/index.html">INSIDE FX</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="a-vision/index.html">A VISION</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="credentials/index.html">CREDENTIALS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="participate/index.html">PARTICIPATE</a>
+                </li>
+            </ul>
+        </div> -->
+            </div>
+        </nav>
+
+
+        <div class="container-fluid content-cont rempad" style="margin-top: 8.4rem; padding: 0px;">
+            <div class="row no-gutters rempad mem-row">
+                <div class="col-lg-9 col-md-12 col-sm-12 rempad video-col">
+                    <div class="video-box rempad">
+                        <video loop="" autoplay="true" muted="" playsinline="">
+                            <source src="../wp-content/uploads/Facesdark.m4v" type="video/mp4">
+                        </video>
+                        <div class="video-content">
+                            <div class="row" style="height: 70%;">
+                                <div class="box1">
+                                    <h1>
+                                        Be <br />
+                                        Engaged <br />
+                                        <span>
+                                            Be <br />
+                                            Yourself.
+                                        </span>
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="row" style="height: 30%;">
+                                <div class="typing-text">
+                                    <p id="typewriter"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-box-hover rempad" style="display: none;">
+                        <video loop="" autoplay="true" muted="" playsinline="">
+                            <source src="../wp-content/uploads/Facesmaroon.m4v" type="video/mp4">
+                        </video>
+                        <div class="video-content">
+                            <div class="row" style="height: 70%;">
+                                <div class="box1-hover">
+                                    <h1>
+                                        We'd <br />
+                                        Love to <br />
+                                        <span>Meet</span> <br />
+                                        YOU
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="row" style="height: 30%;">
+                                <div class="typing-text-hover">
+                                    <p id="typewriter-hover"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 rempad form-col">
+                    <div class="text-box rempad">
+
+                        <div class="box2">
+                            <p>
+                                <span>FX</span> welcomes all <span>creative</span> <br />
+                                <span>minds</span> to participate in <br />
+                                generating <span>brands</span> focused <br />
+                                <span>inclusivity</span>, local <span>viability</span>, <br />
+                                and <span>global</span> capability.
+                            </p>
+                            <p id="join">
+                                <span>Join the team,</span> present <br />
+                                your project, <span>become an<br />
+                                    ambassador,</span> inspire and <br />
+                                be inspired.
+                            </p>
+                            <h1 id="like">
+                                <span>Like What</span> <br />
+                                You Hear? <span style="font-family: RobotoThin;" id="animation-arrow">></span>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="form-box rempad" style="display: none;">
+                        <div class="box2-hover">
+                            <h1>
+                                <span>Tell Us</span> <br />
+                                About <span>You</span>
+                            </h1>
+                            <form>
+                                <div class="form-group row">
+                                    <label for="inputName" class="col-sm-2 col-form-label labelcol">Name</label>
+                                    <div class="col-sm-10 input-col">
+                                        <input type="text" class="form-control" id="inputName">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputEmail" class="col-sm-2 col-form-label labelcol">Email</label>
+                                    <div class="col-sm-10 input-col">
+                                        <input type="email" class="form-control" id="inputEmail">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputCountry" class="col-sm-2 col-form-label labelcol">Country</label>
+                                    <div class="col-sm-10 input-col">
+                                        <!-- <input type="text" class="form-control" id="inputCountry"> -->
+                                        <select class="form-control">
+                                            <option>Select Country</option>
+                                            <option>America</option>
+                                            <option>Australia</option>
+                                            <option>France</option>
+                                            <option>Pakistan</option>
+                                            <option>Switzerland</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputMessage" class="col-sm-2 col-form-label">Message</label>
+                                    <div class="col-sm-10 input-col">
+                                        <textarea class="form-control" type="textarea" id="message" maxlength="140"
+                                            rows="7"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-5">
+
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <button type="submit" class="btn btn-light">send</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu_content rempad">
+                <div class="row rempad">
+                    <div class="col-6 menu-items" style="display: none;">
+                        <a href="../inside-fx/index.html">
+                            <h1><span>Inside</span></h1>
+                        </a>
+                        <a href="../a-vision/index.html">
+                            <h1>Vision</h1>
+                        </a>
+                        <a href="../credentials/index.html">
+                            <h1><span>Credentials</span></h1>
+                        </a>
+                        <a href="../participate/index.html">
+                            <h1>Participate</h1>
+                        </a>
+                    </div>
+                    <div class="col-6">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- footer start -->
+        <footer class="footer bg-light fixed-bottom"
+            style="background-color: transparent !important; font-family: Roboto !important">
+
+            <div class="container-fluid text-left">
+
+                <span style="margin: 0; font-size: 12px; color: #838586; left: 3.7%; position: relative;">
+                    Copyright © 2005 - 2020 FX Holdings Ag and/or its affiliates. All
+                    Rights Reserved. An FX Registered
+                    Company.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="legal-information/index.html"
+                        style="color: #ffffff !important; font-family: RobotoBold !important ">Legal Information
+                    </a>
+                    <!-- <a href="#" style="color: #973637 !important; font-family: Roboto !important; float:right; font-size: 16px;
+        font-weight:bold; position:relative; right: 7%;">
+                    The Power of One</a> -->
+                </span>
+
+                <!-- <span style="margin: 0; font-size: 12px">
+        <a href="legal-information/index.html" style="color: #af1107 !important; font-family: Roboto !important; float:left;
+        position:relative; left: 12%;">
+          Legal
+          Information</a>
+        Copyright © 2005 - 2021 FX Holdings Ag and/or its affiliates. All
+        Rights Reserved. An FX Registered
+        Company. -->
+
+                <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+
+                <!-- <a href="#" style="color: #af1107 !important; font-family: Roboto !important; float:right;
+        position:relative; right: 12%;">
+          The Power of One</a>
+        </span>  -->
+
+            </div>
+
+        </footer>
+        <!-- footer end -->
+
+    </div>
+
+
+
+
+    <script>
+        $(function () {
+            // $('.video-col').hover(function () {
+            //     $('.video-box-hover').css('display', 'block');
+            //     $('.video-box').css('display', 'none');
+            // }, function () {
+            //     $('.video-box-hover').css('display', 'none');
+            //     $('.video-box').css('display', 'block');
+            // });
+
+            // $('.form-col').hover(function () {
+            //     $('.form-box').css('display', 'block');
+            //     $('.text-box').css('display', 'none');
+
+            // }, function () {
+            //     $('.form-box').css('display', 'none');
+            //     $('.text-box').css('display', 'block');
+            // });
+
+            $('#animation-arrow').hover(function () {
+                $('#animation-arrow').css('cursor', 'pointer');
+            });
+
+            $('#animation-arrow').click(function () {
+                $('.form-box').css('display', 'block');
+                $('.video-box-hover').css('display', 'block');
+                $('.text-box').css('display', 'none');
+                $('.video-box').css('display', 'none');
+
+            });
+
+        });
+
+
+
+        $(document).ready(function () {
+            $('.icon-one').click(function () {
+                if ($(this).hasClass('active-one')) {
+                    $(".menu_content").css('width', '0');
+                    $(".mem-row").css('display', 'flex');
+                    $('.icon-one').removeClass('active-one');
+                }
+                else {
+                    $('.icon-one').toggleClass('active-one');
+                    // $("#video").css('display', 'none');
+                    // $("#backgroundColor").css('display', 'none');
+                    $(".mem-row").css('display', 'none');
+                    $(".menu_content").css('width', '100%');
+                }
+
+                const element = document.querySelector('.menu-items');
+                element.classList.add('animated', 'fadeInLeft');
+                setTimeout(function () {
+                    element.classList.remove('fadeInLeft');
+                }, 1500);
+
+            });
+
+
+
+            setTimeout(() => {
+
+                $('.menu-items').css('display', 'flex');
+
+            }, 1000);
+
+        });
+
+    </script>
+
+
+
+    <script>
+        var app = document.getElementById('typewriter');
+        var typewriter = new Typewriter(app, {
+            loop: true,
+            cursor: "",
+        });
+        typewriter.typeString('Flexibility')
+            .pauseFor(1500)
+            .deleteAll()
+            .typeString('Growth')
+            .pauseFor(1500)
+            .deleteAll()
+            .typeString('Teamwork')
+            .pauseFor(1500)
+            .start();
+    </script>
+    <script>
+        var app = document.getElementById('typewriter-hover');
+        var typewriter = new Typewriter(app, {
+            loop: true,
+            cursor: "",
+        });
+        typewriter.typeString('Inspiration')
+            .pauseFor(1500)
+            .deleteAll()
+            .typeString('Commitment')
+            .pauseFor(1500)
+            .deleteAll()
+            .typeString('Engagement')
+            .pauseFor(1500)
+            .start();
+    </script>
+
+
+</body>
+
+</html>
